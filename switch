@@ -1,0 +1,16 @@
+#!/bin/sh
+case $1 in
+    "test" | "testing" | "t")
+        branch="testing"
+        ;;
+    "dev" | "devel" | "d")
+        branch="development"
+        ;;
+    "master" | "main" | "m")
+        branch="master"
+        ;;
+esac
+
+git checkout $branch
+cp /opt/switch_branch/set_files/$branch.settings /var/www/vhost/netbook.uphdev.team/httpdocs/sites/default/settings.php
+
