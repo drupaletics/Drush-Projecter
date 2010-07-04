@@ -1,0 +1,25 @@
+Drush-Projektor will be a set of tools, made for creating Drupals-Projekts quick and easy.                   
+For me a projects contains at least three mainbranches. One for the development-stage, one for the testing-stage and last  
+but not least: the master-stage.          
+With Drupal, we create database-driven applications, so we need at least three databases. One for every main-branch. 
+
+Ok, is that all? No, it isnt. The next thing to think about are the standard-files. There are a lot of contributed modules 
+for drupal and some of these modules are used in every project, like views, cck, admin-menu, devel or rules.
+So it would be a cood idea to get the actual state of drupal and all of this modules with one hit.
+
+So whats the need of this project?
+
+1.)creating the project-folder, git-repos, virtual host and databases with one-hit
+2.)getting drupal and all of the basic-modules with one hit (drush will be my friend, i think)
+3.)easy switching between the branches, including database-switching 
+4.)one gui to rule this all 
+
+I am the prince of chaos, so i start with point 3. Easy switching between branches, including database-switching.          
+To use this skript quicky you have to add its document-root to your PATH-variable. To do this you can add a line 
+to your .bashrc like this:
+export PATH=$PATH:/opt/switch_branch
+
+My next step on this will be to find a solution, whith which the script knows whith which project it has to work, based    
+on the folder you are.
+
+
