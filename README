@@ -21,5 +21,5 @@ export PATH=$PATH:/opt/switch_branch
 
 My next step on this will be to find a solution, whith which the script knows whith which project it has to work, based    
 on the folder you are.
-
+But first of all, i want to switch the language to ruby.
 
